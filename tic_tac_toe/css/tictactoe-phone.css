@@ -1,0 +1,75 @@
+nav {
+    position: static;
+    height: 7.3rem;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: start;
+}
+
+nav #logo {
+    padding: 0;
+    height: 3.8rem;
+}
+
+nav ul li a {
+    font-size: .9rem;
+    padding: 0 6px;
+}
+
+nav div {
+    flex-direction: column;
+    margin: 3px 0;
+    width: 100%;
+}
+
+#utils input {
+    width: 100px;
+}
+
+#utils #search {
+    position: relative;
+    right: 25px;
+    background-color: white;
+    border: none;
+}
+
+#utils #search svg {
+    height: 15px;
+    width: 15px;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    height: min-content;
+}
+
+#tictactoe {
+    grid-template-columns: repeat(3, 10vh);
+    grid-template-rows: repeat(3, 10vh);
+    margin: 2rem auto;
+}
+
+.boxtext {
+    font-size: 8vh;
+    height: 10vh;
+    width: 10vh;
+}
+
+#game-info {
+    margin: 0px;
+}
+
+#score {
+    flex-direction: row;
+    justify-content: space-around;
+    min-height: 5rem;
+}
+
+#score .turninfo {
+    font-size: 1.5rem;
+}

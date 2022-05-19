@@ -1,0 +1,102 @@
+/* fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&family=Playball&family=Redacted+Script&family=Roboto&family=Shadows+Into+Light&display=swap");
+
+/* Basic css file for all pages */
+
+
+/* css reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* utility class */
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.col {
+    flex-direction: column;
+}
+
+nav {
+    justify-content: space-around;
+    width: 100%;
+    height: 3.7rem;
+    position: sticky;
+    top: 0;
+    background-color: rgb(139 77 255 / 53%);
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    font-size: 1.16rem;
+    text-decoration: none;
+    padding: 0 10px;
+    color: rgb(124, 66, 33);
+}
+
+nav ul li a:hover {
+    font-size: 1.18rem;
+    background: rgba(112, 111, 111, 0.123);
+    color: rgb(42, 64, 83);
+}
+
+#utils {
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#utils input {
+    border-radius: 9px;
+    min-width: 150px;
+    padding: 2px 5px;
+    height: 25px;
+}
+
+#utils #search {
+    position: relative;
+    right: 14.4vw;
+    background-color: white;
+    border: none;
+}
+
+#utils #search svg {
+    height: 15px;
+    width: 15px;
+}
+
+#utils #signin {
+    background-color: rgba(226, 109, 73, 0.527);
+    color: rgb(63, 35, 71);
+    padding: 2px 5px;
+    border-radius: 6px;
+    margin: 0 0 0 4px;
+    font-size: 0.9rem;
+}
+
+#utils #signin:hover {
+    font-size: 0.94rem;
+    cursor: pointer;
+}
+
+header h1 {
+    font-size: 3.2rem;
+    font-family: "Playball", cursive;
+    text-align: center;
+}
+
+footer {
+    justify-content: center;
+    background-color: rgb(243, 250, 153);
+    font-size: 1rem;
+}

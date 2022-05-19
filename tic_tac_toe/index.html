@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe | The Game</title>
+    <link rel="stylesheet" href="css/basic.css" />
+    <link rel="stylesheet" href="css/tictactoe.css" />
+    <link rel="stylesheet" media="only screen and (max-width:426px)" href="css/tictactoe-phone.css" />
+
+    <link rel="shortcut icon" href="img/logo.svg" type="image/x-icon" />
+</head>
+
+<body>
+    <nav class="flex">
+        <div class="flex">
+            <!-- <a id="logo" href="index.html">
+                <svg width="100" height="80" xmlns="http://www.w3.org/2000/svg">
+            Created with UXWing SVG Editor - https://uxwing.com/svg-icon-editor/
+            <defs>
+              <linearGradient
+                id="svg_12"
+                x1="0.613281"
+                y1="0.394176"
+                x2="0.746094"
+                y2="0.737926"
+              >
+                <stop stop-color="#00ffff" offset="0" />
+                <stop stop-color="#ff0000" offset="1" />
+              </linearGradient>
+            </defs>
+            <g>
+              <title>background</title>
+              <rect
+                x="-1"
+                y="-1"
+                width="102"
+                height="82"
+                id="canvas_background"
+                fill="none"
+              />
+              <g id="canvasGrid" display="none">
+                <rect
+                  id="svg_1"
+                  width="640"
+                  height="480"
+                  x="6.087458"
+                  y="26.580177"
+                  stroke-width="0"
+                  fill="url(#gridpattern)"
+                />
+              </g>
+            </g>
+            <g>
+              <title>Layer 1</title>
+              <text
+                stroke="#FF0000"
+                fill="url(#svg_12)"
+                stroke-width="0"
+                x="3.022915"
+                y="27.733058"
+                id="svg_2"
+                font-size="15"
+                font-family="'Shadows Into Light'"
+                text-anchor="start"
+                xml:space="preserve"
+                transform="rotate(-11 49.99340438842774,39.999996185302756) matrix(1.2826987894597008,0,0,1.5557369361175404,-1.0140395324714868,5.782244847850555) "
+                font-weight="bold"
+                font-style="italic"
+              >
+                Gamer's Adda
+              </text>
+            </g>
+          </svg>
+            </a> -->
+
+            <ul class="flex">
+                <li><a href="index.html">Tic Tac Toe</a></li>
+            </ul>
+        </div>
+
+        <div id="utils" class="flex">
+            <!-- <input type="text" placeholder="search" /> -->
+
+            <!-- <button id="search">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" role="img"><path d="M37 33.5c3.1-4 4.5-9 4.1-14-.5-5-2.8-9.6-6.6-13-3.8-3.3-8.7-5.1-13.7-4.9-5 .2-9.8 2.2-13.4 5.8-3.5 3.6-5.6 8.4-5.7 13.4-.2 5 1.6 9.9 4.9 13.7 3.3 3.8 8 6.1 13 6.6s10-1 14-4.1l.1.1 10.5 10.5c.2.2.5.4.8.5.3.1.6.2.9.2.3 0 .6-.1.9-.2.3-.1.6-.3.8-.5.2-.2.4-.5.5-.8.1-.3.2-.6.2-.9 0-.3-.1-.6-.2-.9-.1-.3-.3-.6-.5-.8L37.1 33.6l-.1-.1zm-5.1-22.6c1.4 1.4 2.5 3 3.3 4.8.8 1.8 1.2 3.7 1.2 5.7s-.4 3.9-1.1 5.7c-.8 1.9-1.9 3.5-3.3 4.9-1.4 1.4-3 2.5-4.8 3.2-1.8.7-3.7 1.1-5.7 1.1s-3.9-.4-5.7-1.2c-1.8-.8-3.4-1.9-4.8-3.3-2.7-2.8-4.3-6.5-4.3-10.5 0-3.9 1.6-7.7 4.3-10.4 2.8-2.8 6.5-4.3 10.4-4.3 4 .1 7.7 1.6 10.5 4.3z" fill-rule="evenodd" clip-rule="evenodd" fill="#15141a"/></svg>
+            </button> -->
+
+            <button id="signin">Sign in</button>
+        </div>
+    </nav>
+
+    <header class="flex col">
+        <h1>Tic Tac Toe | The Game</h1>
+    </header>
+    <main>
+        <div id="tictactoe">
+            <div id="line"></div>
+            <div id="box-1" class="box l t"><span class="boxtext"></span></div>
+            <div id="box-2" class="box t"><span class="boxtext"></span></div>
+            <div id="box-3" class="box t r"><span class="boxtext"></span></div>
+            <div id="box-4" class="box l"><span class="boxtext"></span></div>
+            <div id="box-5" class="box"><span class="boxtext"></span></div>
+            <div id="box-6" class="box r"><span class="boxtext"></span></div>
+            <div id="box-7" class="box l d"><span class="boxtext"></span></div>
+            <div id="box-8" class="box d"><span class="boxtext"></span></div>
+            <div id="box-9" class="box d r"><span class="boxtext"></span></div>
+        </div>
+        <div id="game-info">
+            <div id="score">
+                <span class="turninfo">Turn For X</span>
+                <button id="reset">Reset</button>
+            </div>
+            <div id="imgbox">
+                <img src="img/excited.gif" alt="excited" id="excited" />
+            </div>
+        </div>
+    </main>
+    <footer class="flex">
+        All Rights are reserved to &copy;<strong> Aashutosh kumar </strong>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
