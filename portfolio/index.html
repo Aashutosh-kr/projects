@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/icons/favicon.ico" type="image/x-icon">
+
+    <title>Aashutosh Kumar | Portfolio</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/navigation.js" defer></script>
+    <script src="js/intersection.js" defer></script>
+    <script src="js/nav-intersection.js" defer></script>
+</head>
+
+<body>
+    <div class="ham flex">
+        <img src="assets/icons/hamburger.png" alt="menu" id="hamburger" width="30" height="26" />
+        <img src="assets/icons/close-line.png" alt="close" id="close" width="30" height="26" />
+    </div>
+    <nav id="navbar" class="flex nav-hidden nav-bg-pri">
+        <ul class="flex text-center">
+            <li>
+                <a href="#welcome-section">Home</a>
+            </li>
+            <li>
+                <a href="#about">About Me</a>
+            </li>
+            <li>
+                <a href="#projects">My Projects</a>
+            </li>
+            <li>
+                <a href="#contacts">Social Links</a>
+            </li>
+            <div class="btns-div .mail-btn flex hidden">
+                <a href="mailto:aashutoshkumar869@gmail.com" class="flex">
+                    <span>Mail me</span>
+                    <span>
+                        <img src="assets/icons/mail.svg" alt="" width="20">
+                    </span>
+                </a>
+            </div>
+        </ul>
+    </nav>
+    <main class="overflow-x-hidden">
+        <div class="topbtn invisible">
+            <a href="#welcome-section">
+                <img src="assets/icons/top.svg" alt="Scroll to top" width="42.5" height="42.5" />
+            </a>
+        </div>
+        <header id="welcome-section" class="flex text-center scroll-margin">
+            <img src="assets/img/my_pic.png" alt="my picture" width="425" height="578" title="I am Aashutosh Kumar." />
+            <section class="intro">
+                <h1 class="text-center">Hey! This is Aashutosh Kumar.</h1>
+                <hr />
+                <p>I am a Self-taught <em>Frontend Web Developer</em>. Know more about me <a href="#about">here</a></p>
+                <p>If you want to hire me feel free to contact me here</p>
+                <div class="btns-div flex">
+                    <div>
+                        <a href="mailto:aashutoshkumar869@gmail.com" class="flex">
+                            <span>Contact me</span>
+                            <span>
+                                <img src="assets/icons/mail.svg" alt="" width="20">
+                            </span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="assets/static/resume/Aashutosh_Kumar_Resume.pdf" class="flex">
+                            <span>Get My Resume</span>
+                            <span>
+                                <img src="assets/icons/resume.svg" alt="" width="20">
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </header>
+        <div id="wrapper">
+            <article id="about" class="flex scroll-margin">
+                <section class="about-section slide-in fade-in">
+                    <h2 class="text-center">About Me</h2>
+                    <hr />
+                    <div class="slide-in fade-in">
+                        <p>I am from Gaya, Bihar. Currently I'm pursuing my Bachelor's and doing web development.</p>
+                        <p>My web development journey started back in my school days when at first I get exposed to its technology as part of our curriculum.</p>
+                        <p>I learned it recently and started making sites as my hobby and as my full time work.</p>
+                    </div>
+                </section>
+                <section class="skill-section slide-in fade-in">
+                    <h2 class="text-center">My Skills</h2>
+                    <hr />
+                    <ul class="slide-in fade-in">
+                        <li class="flex">
+                            <p>
+                                <span><img src="assets/icons/html.svg" alt="" width="42.5" height="42.5"></span>
+                                <span>HTML5</span>
+                            </p>
+                        </li>
+                        <li class="flex">
+                            <p>
+                                <span><img src="assets/icons/css.svg" alt="" width="42.5" height="42.5"></span>
+                                <span>CSS3</span>
+                            </p>
+                        </li>
+                        <li class="flex">
+                            <p>
+                                <span><img src="assets/icons/js.svg" alt="" width="42.5" height="42.5"></span>
+                                <span>JavaScript</span>
+                            </p>
+                        </li>
+                        <li class="flex">
+                            <p>
+                                <span><img src="assets/icons/tailwind-css.svg" alt="" width="42.5" height="42.5"></span>
+                                <span>Tailwind CSS</span>
+                            </p>
+                        </li>
+                        <li class="flex">
+                            <p>
+                                <span><img src="assets/icons/cross-platform.svg" alt="" width="42.5" height="42.5"></span>
+                                <span>Responsive Web Designing</span>
+                            </p>
+                        </li>
+                    </ul>
+                </section>
+            </article>
+            <section id="projects" class="flex col scroll-margin">
+                <h2 class="text-center">My Projects</h2>
+                <hr />
+                <h3 class="text-center">Tailwind CSS Projects</h3>
+                <hr />
+                <div class="project-tile">
+                    <figure class="slide-in from-left">
+                        <a href="projects/facebook login page clone/" target="_blank">
+                            <img loading="lazy" src="assets/project-img/facebook.jpg" alt="Facebook login page Clone" width="768" height="432" />
+                            <figcaption class="text-center">
+                                Facebook login page Clone
+                            </figcaption>
+                        </a>
+                    </figure>
+                    <figure class="slide-in from-right">
+                        <a href="projects/microsoft homepage clone/" target="_blank">
+                            <img loading="lazy" src="assets/project-img/microsoft.jpg" alt="Microsoft Homepage Clone" width="768" height="432" />
+                            <figcaption class="text-center">
+                                Microsoft Homepage Clone
+                            </figcaption>
+                        </a>
+                    </figure>
+                </div>
+                <hr />
+                <h3 class="text-center">HTML, CSS, JavaScript Projects</h3>
+                <hr />
+                <div class="project-tile">
+
+                    <figure class="slide-in from-left">
+                        <a href="https://www.bangalibabaiti.org" target="_blank">
+                            <img loading="lazy" src="assets/project-img/iti-website.jpg" alt="ITI website" width="768" height="432" />
+                            <figcaption class="text-center">
+                                ITI website
+                            </figcaption>
+                        </a>
+                    </figure>
+                    <figure class="slide-in from-right">
+                        <a href="https://aashutosh-kr.github.io/Fronend_Mentor_project/" target="_blank">
+                            <img loading="lazy" src="assets/project-img/space_tourism_website_project.jpg" alt="Space tourism website | Fronend Mentor project" width="768" height="432" />
+                            <figcaption class="text-center">
+                                Space tourism website | Fronend Mentor project
+                            </figcaption>
+                        </a>
+                    </figure>
+                    <figure class="slide-in from-left">
+                        <a href="projects/notes app/" target="_blank">
+                            <img loading="lazy" src="assets/project-img/notes_app.jpg" alt="notes app" width="768" height="432" />
+                            <figcaption class="text-center">
+                                Magical notes app Javascript project
+                            </figcaption>
+                        </a>
+                    </figure>
+                    <figure class="slide-in from-right">
+                        <a href="projects/tic_tac_toe/" target="_blank">
+                            <img loading="lazy" src="assets/project-img/tictactoe.png" alt="Tic Tac Toe Game" width="768" height="432" />
+                            <figcaption class="text-center">Tic Tac Toe Game</figcaption>
+                        </a>
+                    </figure>
+                    <!-- <figure class="from-left">
+                    <a href="https://aashutosh-kr.github.io/Free_codecamp/Projects/landing page/index.html" target="_blank">
+                        <img loading="lazy" src="assets/project-img/watch_landing_page.png" alt="watch landing page" width="768" height="432" />
+                        <figcaption class="text-center">Landing page</figcaption>
+                    </a>
+                </figure> -->
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer id="contacts" class="flex col overflow-y-hidden">
+        <h2 class="text-center slide-in fade-in">Social Links</h2>
+        <section class="social-links flex text-center slide-in fade-in">
+            <div class="links">
+                <a href="https://github.com/Aashutosh-kr" class="flex col" target="_blank">
+                    <img loading="lazy" src="assets/icons/github.svg" alt="github" width="68" height="68" />github</a>
+            </div>
+            <div class="links">
+                <a href="https://www.linkedin.com/in/aashutosh-kumar-8b5ba7230/" class="flex col" target="_blank">
+                    <img loading="lazy" src="assets/icons/linkedin.svg" alt="LinkedIn" width="68" height="68" />LinkedIn</a>
+            </div>
+            <div class="links">
+                <a href="https://codepen.io/aashutosh-kr" class="flex col" target="_blank">
+                    <img loading="lazy" src="assets/icons/codepen.svg" alt="codepen" width="68" height="68" />CodePen</a>
+            </div>
+            <div class="links">
+                <a href="https://www.freecodecamp.org/Aashutosh_kumar" class="flex col" id="profile-link" target="_blank">
+                    <img loading="lazy" src="assets/icons/fcc.svg" alt="freecodecamp" width="68" height="68" />freeCodeCamp</a>
+            </div>
+            <div class="links">
+                <a href="mailto:aashutoshkumar869@gmail.com" class="flex col" target="_blank">
+                    <img loading="lazy" src="assets/icons/mail.svg" alt="mail" width="68" height="68" />E-mail</a>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>
