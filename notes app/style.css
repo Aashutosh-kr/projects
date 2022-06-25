@@ -81,6 +81,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     box-shadow: var(--shadow);
+    padding-left: 1rem;
 }
 
 nav div {
@@ -90,7 +91,8 @@ nav div {
 
 nav input::placeholder,
 nav input {
-    width: 10.5rem;
+    /* width: 10.5rem; */
+    margin-inline: auto;
     color: black;
     font-family: var(--ff-barlow);
     font-weight: 400;
@@ -153,6 +155,11 @@ main h2 {
 
 main section {
     position: relative;
+}
+
+.deleteAll-container{
+    position: relative;
+    height: 3rem;
 }
 
 .deleteAll {

@@ -1,38 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Amaging Notes</title>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Amaging Notes</title>
+		<link rel="stylesheet" href="style.css" />
+		<script src="script.js" defer></script>
+	</head>
 
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
-</head>
-
-<body>
-    <nav class="flex">
-        <div class="logo">Amazing Notes</div>
-        <div class="flex">
-            <input type="text" id="search" placeholder="Search notes" />
-            <button id="signin-btn" class="btn">SignIn</button>
-        </div>
-    </nav>
-    <main>
-        <h1>Write Your Notes Here</h1>
-        <div class="note-editor">
-            <textarea placeholder="Heading" id="note_heading"></textarea>
-            <hr />
-            <textarea placeholder="Your Note Here" id="note"></textarea>
-            <button id="save-btn" class="btn">Save</button>
-        </div>
-        <section>
-            <h2>Your notes</h2>
-            <button class="btn deleteAll">Delete All Notes</button>
-            <div class="user-notes"></div>
-        </section>
-    </main>
-</body>
-
+	<body>
+		<nav class="flex">
+			<div class="logo">Amazing Notes</div>
+			<div class="flex">
+				<input type="text" id="search" placeholder="Search notes" />
+				<!-- <button id="signin-btn" class="btn">SignIn</button> -->
+			</div>
+		</nav>
+		<main>
+			<h1>Write Your Notes Here</h1>
+			<div class="note-editor">
+				<textarea placeholder="Heading" id="note_heading"></textarea>
+				<hr />
+				<textarea placeholder="Your Note Here" id="note"></textarea>
+				<button id="save-btn" class="btn">Save</button>
+			</div>
+			<section>
+				<h2>Your notes</h2>
+				<div class="deleteAll-container">
+					<button class="btn deleteAll">Delete All Notes</button>
+				</div>
+				<div class="user-notes"></div>
+			</section>
+		</main>
+	</body>
 </html>
